@@ -1,0 +1,69 @@
+//====================================================================================================
+.footer {
+padding-top: rem(10);
+padding-bottom: rem(10);
+background-color: rgba(104, 135, 111, 0.813);
+// .footer__container
+
+   &__container {
+      display: flex;
+      justify-content: space-between;
+   }
+
+   // .footer__column
+
+   &__column {
+     
+   }
+
+   // .footer__column-logo
+
+   &__column-logo {
+      display: block;
+      margin-bottom: rem(15);
+      
+   }
+
+   // .footer__column-text
+
+   &__column-text {
+      font-size: rem(14);
+      color: rgba(254, 255, 254, 0.669);
+      transition: all 0.3s ease 0s;
+      &:hover{
+         opacity: 0.5;
+      }
+   }
+
+   // .footer__contact
+
+   &__contact {
+   }
+
+   // .footer__contact-social
+
+   &__contact-social {
+   }
+
+   // .footer__contact-ista
+
+   &__contact-ista {
+   }
+
+   // .footer__contact-fb
+
+   &__contact-fb {
+   }
+
+   // .footer__contact-tel
+
+   &__contact-tel {
+   }
+
+   // .footer__contact-pfone
+
+   &__contact-pfone {
+   }
+}
+
+//====================================================================================================

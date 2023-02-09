@@ -1,0 +1,143 @@
+// Заголовки, загальні БЕМ блоки та інше...
+
+// ========= текст, весь блок ==========
+.content-block {
+   max-width: rem(632);
+   // .content-block__title-lable
+
+   &__title-lable {
+      position: relative;
+      margin-bottom: rem(5);
+      color: rgb(246, 255, 0);
+
+      &::after {
+         position: absolute;
+         content: "";
+         margin-left: rem(5);
+         width: rem(45);
+         height: 1px;
+         top: 51%;
+         display: inline-block;
+         background-color: rgb(246, 255, 0);
+      }
+   }
+
+   // .content-block__title
+
+   &__title {
+      margin-bottom: rem(20);
+      text-transform: uppercase;
+      font-size: rem(50);
+      font-weight: 600;
+      line-height: 1.1;
+      color: $whiteColor;
+   }
+
+   // .content-block__text
+
+   &__text {
+      font-weight: 700;
+      font-size: rem(18);
+      line-height: 1.7;
+      color: $whiteColor;
+   }
+}
+
+// ============цифра============= 
+.count{
+   font-weight: 700;
+   font-size: rem(120);
+   line-height: 1.5;   
+   color: $whiteColor;
+   opacity: 0.1;
+}
+
+// ==============ряд с иконками===============
+.row {
+display: grid;
+grid-template-columns: repeat(3, rem(440));
+justify-content: space-around;
+column-gap: rem(20);
+row-gap: rem(15);
+
+@media (min-width:$mobile) and (max-width: rem(1365))    {
+   grid-template-columns: 0.5fr;
+  
+  }
+
+   @media (max-width: $mobile)  { 
+      grid-template-columns: rem(440);
+   }
+   // .row__column
+
+   &__column { 
+   }
+}
+
+.column {
+text-align: center;
+@media (min-width:$mobile) and (max-width: rem(1365))  {
+   display: grid;
+   grid-template-columns: 1fr 1fr 1fr;
+   grid-template-areas: 
+   "a a a"
+   "b c c";
+   align-items: center;
+   column-gap: rem(10);
+  }
+   // @media (max-width:$mobile )  { 
+   //    grid-template-columns: 1fr;
+   //    grid-template-areas: none;
+   // }
+
+
+   // .column__pic
+
+   &__pic {
+      width: 100%;
+      height: rem(105);
+      margin: 0 auto;
+      grid-area: b;
+      margin-bottom: rem(15);
+
+      @media (max-width: rem(1365))  {
+         margin-top: rem(15);
+      }
+   }
+
+   
+   // .column__title
+
+   &__title {
+      font-size: rem(25);
+      font-weight: 700;
+      line-height: 1.1;
+      margin-bottom: rem(10);
+      grid-area: a;
+
+      @media (max-width: rem(1365))  {
+         margin-bottom: 0;
+      }
+   }
+
+   // .column__text
+
+   &__text {
+      line-height: 1.2;
+      grid-area: c;
+
+      @media (min-width:$mobile) and (max-width: rem(1365))  {
+      text-align: left;
+      }
+   }
+}
+
+.pic-1{
+   background: url(@img/row/01.png) center / contain no-repeat;
+}
+.pic-2{
+   background: url(@img/row/02.png) center / contain  no-repeat;
+}
+.pic-3{
+   background: url(@img/row/03.png) center / contain  no-repeat;
+}
