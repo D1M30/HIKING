@@ -2,18 +2,108 @@
 
    // .page__main
 
-   &__main {
-   
-   }
+   &__main {}
 }
 
 .main {
-  
+
+   background-image: url(@img/back.jpg);
+   width: 100vw;
+   height: 100vh;
+   background-position: top;
+   background-size: cover;
+   position: relative;
+
    // .main__container
 
    &__container {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      font-weight: 700;
+      position: relative;
+      height: 100vh;
+   }
+
+   // .main__social
+
+   &__social {
+       @include adaptiveValue("font-size", 40, 18);
+      font-size: rem(40);
+
+      display: flex;
+flex-direction: column;
+align-items: center;
+row-gap: rem(25);
+padding: rem(10);
+border-radius: rem(5);
+background-color: rgba(255, 255, 255, 0.756);
+   }
+
+   // .main__content
+
+   &__content {}
+}
+
+.social {
+
+   // .social__insta
+&__text{
+
+
+}
+
+&__box{
+
+}
+   &__insta {
+   }
+
+   // .social__yuotube
+
+   &__youtube {
      
-   
-   
+   }
+
+   // .social__fb
+
+   &__fb {
+      
+   }
+
+   // .social__tweet
+
+   &__tweet {
+    
+   }
+}
+
+
+.content-main {
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   flex: 0 1 45%;
+
+
+
+   &__image {
+      max-width: rem(700);
+     
+       @media (max-width: $tablet)  { 
+         min-width: rem(300);
+       }
+
+      img {
+         width: 100%;
+      }
+   }
+
+
+}
+.social--icon{
+   transition: all 0.3s ease 0s;
+   &:hover{
+      color: rgba(31, 33, 31, 0.79);
    }
 }

@@ -12,5 +12,24 @@
 	&:before {
 		@extend %ic;
 		display: block;
+	
+
+		
 	}
+
 }
+
+
+._icon-facebook:before {
+	content: "\ea90";
+ }
+ ._icon-instagram:before {
+	content: "\ea92";
+ }
+ ._icon-twitter:before {
+	content: "\ea96";
+
+ }
+ ._icon-youtube:before {
+	content: "\ea9d";
+ }

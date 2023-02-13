@@ -25,12 +25,7 @@
    // .content-block__title
 
    &__title {
-      margin-bottom: rem(20);
-      text-transform: uppercase;
-      font-size: rem(50);
-      font-weight: 600;
-      line-height: 1.1;
-      color: $whiteColor;
+   
    }
 
    // .content-block__text
@@ -41,6 +36,15 @@
       line-height: 1.7;
       color: $whiteColor;
    }
+}
+
+.title{
+   margin-bottom: rem(20);
+      text-transform: uppercase;
+      font-size: rem(50);
+      font-weight: 600;
+      line-height: 1.1;
+      color: $whiteColor;
 }
 
 // ============цифра============= 

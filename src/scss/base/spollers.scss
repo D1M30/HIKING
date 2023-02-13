@@ -11,13 +11,10 @@
 	font-size: rem(20);
 }
 // Заголовок спойлера
-.spollers__title {
+.footer__title {
 	width: 100%;
 	cursor: default;
 	text-align: left;
-	border: 1px solid #eee;
-	padding: rem(10) rem(15);
-	border-radius: rem(5);
 	position: relative;
 	._spoller-init & {
 		cursor: pointer;
@@ -26,8 +23,8 @@
 			content: "";
 			position: absolute;
 			right: 10px;
-			top: 50%;
-			background-color: #000;
+			top: 60%;
+			background-color: rgb(250, 246, 246);
 			height: 2px;
 			width: 15px;
 			transition: transform 0.5s ease 0s;
