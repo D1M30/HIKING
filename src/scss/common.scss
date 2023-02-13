@@ -26,14 +26,16 @@
    // .content-block__title
 
    &__title {
-   
+   color: $whiteColor;
+   font-size: rem(22);
+   font-weight: 700;
+   margin-bottom: rem(10);
    }
 
    // .content-block__text
 
    &__text {
-      font-weight: 700;
-      font-size: rem(18);
+      font-weight: 600;
       line-height: 1.7;
       color: $whiteColor;
    }

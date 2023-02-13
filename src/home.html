@@ -5,21 +5,20 @@
 	})
 	<body>
 		<div class="wrapper">
-			<!-- @@include('html/_header.htm',{}) -->
+			@@include('html/_header.htm',{})
 			<main class="page">
 
+				@@include('section/main.html',{})
 
-				<!-- @@include('section/main.html',{}) -->
 				@@include('section/about.html',{})
 				@@include('section/purpose.html',{})
 				@@include('section/comunity.html',{})
 				@@include('section/bg.html',{})
 
-				@@include('section/main.html',{})
 				@@include('section/form.html',{})
 
 			</main>
-			<!-- @@include('html/_footer.htm',{}) -->
+			@@include('html/_footer.htm',{})
 		</div>
 		@@include('html/_js.htm',{})
 	</body>
