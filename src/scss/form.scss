@@ -1,0 +1,141 @@
+.page {
+
+   // .page__form
+
+   &__form {}
+}
+
+.form {
+   @include adaptiveValue("padding-top", 80, 60);
+   @include adaptiveValue("padding-bottom", 80, 60);
+   // .form__container
+
+   &__container {}
+
+   // .form__title
+
+   &__title {
+      text-align: center;
+   }
+
+   // .form__box
+
+   &__box {
+      display: flex;
+      justify-content: space-between;
+      // align-items: center;
+      color: $whiteColor;
+      column-gap: rem(15);
+    
+
+       @media (max-width: $mobile)  { 
+         flex-direction: column;
+         justify-content: start;
+         row-gap: rem(30);
+       }
+   }
+
+   // .form__content
+
+   &__content {
+      display: flex;
+      flex-direction: column;
+align-items: center;  
+       @media (min-width: $mobile)  {
+      flex: 1 1 50%;
+      }
+
+
+   }
+
+   &__block {
+      display: flex;
+      justify-content: center;
+      flex: 1 1 50%;
+  
+      // align-items: center;
+
+   }
+
+   // .form__subtitle
+
+   &__subtitle {
+      text-align: center;
+      font-weight: 700;
+      font-size: rem(22);
+      margin-bottom: rem(10);
+   }
+
+   &__text {
+      line-height: 1.2;
+      font-size: rem(20);
+      max-width: rem(500);
+     
+   }
+
+   // .form__body
+
+   &__body {
+      display: inline-flex;
+      flex-direction: column;
+      align-items: center;
+      row-gap: rem(10);
+      border: 5px solid rgba(244, 246, 243, 0.422);
+      padding: rem(15) rem(25);
+      border-radius: rem(10);
+   }
+
+   // .form__item
+
+   &__item {}
+
+   // .form__label
+
+   &__label {
+      display: inline-block;
+      margin-bottom: rem(5);
+      font-weight: 600;
+   }
+
+   // .form__input
+
+   &__input {
+      height: 40px;
+      padding: 10px 20px;
+      border-radius: 5px;
+      width: 100%;
+      font-size: 18px;
+      transition: all 0.5s ease 0s;
+      outline: none;
+
+      &:focus{
+         box-shadow: 0 0 15px #7a956b;
+      }
+      // max-width: rem(300);
+   }
+
+   // .form__button
+
+   &__button {
+      padding: rem(10) rem(40);
+      background-color: rgb(14, 59, 13);
+      border-radius: 10px;
+      transition: all 0.3s ease 0s;
+      align-self: flex-end;
+
+      &:hover {
+         background-color: rgb(47, 94, 42);
+      }
+
+      &:active {
+         background-color: rgb(14, 59, 13);
+      }
+   }
+}
+
+.input--text{
+   min-height: 120px;
+	resize: vertical;
+	padding: 20px;
+}
+.title {}
