@@ -151,7 +151,14 @@ background-color: #4D665B;
 // Підключення стилів окремих блоків
 @import "header";
 @import "main";
+
+@import "about";
+@import "purpose";
+@import "comunity";
+@import "bg";
+
 @import "form";
+
 @import "footer";
 
 // Підключення стилів окремих сторінок

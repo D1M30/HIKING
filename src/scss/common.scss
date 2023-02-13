@@ -2,13 +2,14 @@
 
 // ========= текст, весь блок ==========
 .content-block {
-   max-width: rem(632);
+   // max-width: rem(632);
    // .content-block__title-lable
 
    &__title-lable {
       position: relative;
       margin-bottom: rem(5);
       color: rgb(246, 255, 0);
+      text-transform: uppercase;
 
       &::after {
          position: absolute;
